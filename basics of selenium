@@ -1,0 +1,22 @@
+public static void main(String[] args) {
+		
+		//Launch Browser
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sathish\\eclipse-workspace\\selenium\\Drivers\\chromedriver.exe");
+		
+		//initialize WebDriver
+		WebDriver driver = new ChromeDriver();
+		
+		//To maximize the Window
+		driver.manage().window().maximize();
+		
+        // to load the URL
+		driver.get("https://www.facebook.com/login/");
+		
+		//to get the URl of webpage
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		
+		//to get title of webpage
+		String title = driver.getTitle();
+		System.out.println(title);
+		
